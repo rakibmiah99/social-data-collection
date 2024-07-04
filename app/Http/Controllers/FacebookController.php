@@ -33,6 +33,9 @@ class FacebookController extends Controller
 
     }
 
+    public function getUserIDs(){
+        return Facebook::pluck('user_id');
+    }
     public function get(){
         return Facebook::get([
             'name',

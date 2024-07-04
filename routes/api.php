@@ -10,4 +10,5 @@ Route::get('/user', function (Request $request) {
 Route::prefix('facebook')/*->middleware('content.policy')*/->group(function (){
     Route::get('store', [\App\Http\Controllers\FacebookController::class, 'store']);
     Route::get('get', [\App\Http\Controllers\FacebookController::class, 'get']);
+    Route::get('get-user-ids', [\App\Http\Controllers\FacebookController::class, 'getUserIDs']);
 });
