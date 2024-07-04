@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('facebooks', function (Blueprint $table) {
             $table->id();
-            $table->string('links', 1000)->nullable();
+            $table->string('link', 1000)->nullable();
             $table->string('user_id')->nullable();
             $table->string('group_id')->nullable();
             $table->string('name')->nullable();
