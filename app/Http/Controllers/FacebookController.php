@@ -32,4 +32,11 @@ class FacebookController extends Controller
         return 'success';
 
     }
+
+    public function get(){
+        return Facebook::get([
+            'name',
+            'user_id'
+        ]);
+    }
 }
