@@ -30,7 +30,9 @@
                     <tr>
                         <td>{{$key+1}}</td>
                         <td>{{$topic->name}}</td>
-                        <td></td>
+                        <td>
+                            <a href="{{route('admin.topic.delete', $topic->id)}}" class="btn btn-danger">Delete</a>
+                        </td>
                     </tr>
                 @endforeach
             </tbody>

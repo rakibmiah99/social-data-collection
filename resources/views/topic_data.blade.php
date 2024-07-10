@@ -17,15 +17,15 @@
         ></iframe>
     </div>--}}
 
-    @foreach(/*$topic->topic_data*/ [
+    @foreach($topic->topic_data /*[
     (object)['id' => 1, 'emb_id' => '_cvZXVmEZ3M'],
     (object)['id' => 2, 'emb_id' => '1hEjlr3Vs-o'],
     (object)['id' => 3, 'emb_id' => 'Lpu666ClDCk'],
-] as $topic)
+]*/ as $topic)
         <div class="col-12 col-lg-6 col-xl-3">
             <div class="p-2">
                 <div class="card">
-                    <div class="player" id="player-{{$topic->id}}" data-plyr-provider="youtube" data-plyr-embed-id="{{$topic->emb_id}}"></div>
+                    <div class="player" id="player-{{$topic->id}}" data-plyr-provider="youtube" data-plyr-embed-id="{{$topic->link}}"></div>
                 </div>
             </div>
         </div>

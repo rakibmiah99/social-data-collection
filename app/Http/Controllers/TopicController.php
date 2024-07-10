@@ -34,9 +34,20 @@ class TopicController extends Controller
        Topics::create(['name' => $request->name]);
        return redirect()->back();
    }
+
+   public function deleteTopic($topic_id){
+       Topics::find($topic_id)->delete();
+       return redirect()->back();
+   }
+
    function adminTopicDataStore(Request $request){
        $data =  $request->only(['title', 'topic_id', 'link']);
        TopicData::create($data);
        return redirect()->back();
    }
+
+    public function deleteTopicData($topic_data_id){
+        TopicData::find($topic_data_id)->delete();
+        return redirect()->back();
+    }
 }
