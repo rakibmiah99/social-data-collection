@@ -11,7 +11,7 @@
 
 
     @foreach($topic->topic_data as $topic)
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="col-12 col-lg-6 col-xl-3">
             <div class="p-2">
                 <div class="card">
                     <div class="player" id="player-{{$topic->id}}" data-plyr-provider="youtube" data-plyr-embed-id="bTqVqk7FSmY"></div>
