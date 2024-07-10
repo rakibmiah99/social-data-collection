@@ -8,7 +8,14 @@
 <div class="mt-3 row">
 
 
-
+    <div class="plyr__video-embed" id="player">
+        <iframe
+            src="https://www.youtube.com/embed/_cvZXVmEZ3M?si=mp-rao2M0nX5Etk-&amp"
+            allowfullscreen
+            allowtransparency
+            allow="autoplay"
+        ></iframe>
+    </div>
 
     @foreach($topic->topic_data as $topic)
         <div class="col-12 col-lg-6 col-xl-3">
